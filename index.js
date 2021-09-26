@@ -5,7 +5,7 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send('successfully deployed CICD with Jenkins-->Docker-->NodeJS')
+  response.send('successfully deployed CICD with Jenkins-->Docker-->NodeJS port 5001')
 }) 
 
 app.listen(app.get('port'), function() {
